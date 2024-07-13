@@ -1,16 +1,19 @@
 import './assets/main.css'
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
-import VueVideoPlayer from '@videojs-player/vue'
-import 'video.js/dist/video-js.css'
+//@ts-ignore
+import VuePlyr from 'vue-plyr'
+import 'vue-plyr/dist/vue-plyr.css'
 
 import App from './App.vue'
 import router from './router'
 
 const app = createApp(App)
-
+app.use(VuePlyr, {
+  plyr: {}
+})
 app.use(createPinia())
-app.use(VueVideoPlayer)
+
 app.use(router)
 
 app.mount('#app')

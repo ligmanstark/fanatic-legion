@@ -16,6 +16,7 @@ const router = createRouter({
     {
       path: '/content',
       name: 'content',
+      //@ts-ignore
       component: () => import('../views/ContentView.vue')
     }
   ]

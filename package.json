@@ -16,11 +16,9 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
-    "@videojs-player/vue": "^1.0.0",
     "pinia": "^2.1.7",
-    "video.js": "^8.12.0",
-    "videojs-youtube": "^3.0.1",
     "vue": "^3.4.29",
+    "vue-plyr": "^7.0.0",
     "vue-router": "^4.3.3",
     "vue-video-player": "^6.0.0"
   },

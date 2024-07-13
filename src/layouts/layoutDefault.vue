@@ -1,19 +1,17 @@
 <script setup lang="ts">
-import { RouterLink } from 'vue-router'
-import LogoFNT from '../components/icons/IconLogoFNT.vue'
-import { ref } from 'vue'
-const isClose = ref(true)
+import { RouterLink } from "vue-router"
+import LogoFNT from "../components/icons/IconLogoFNT.vue"
 </script>
 <template>
-  <div class="header" @click="isClose = !isClose">
+  <div class="header">
     <LogoFNT />
     <h1>Fanatic Legion.</h1>
   </div>
-  <nav v-if="!isClose">
-    <RouterLink to="/" @click="isClose = !isClose">Домашка</RouterLink>
-    <RouterLink to="/blog" @click="isClose = !isClose">Блог</RouterLink>
-    <RouterLink to="/content" @click="isClose = !isClose">Контент</RouterLink>
-    <RouterLink to="/about" @click="isClose = !isClose">О нас</RouterLink>
+  <nav>
+    <RouterLink to="/">Домашка</RouterLink>
+    <RouterLink to="/map">Карта суверенитета</RouterLink>
+    <RouterLink to="/content">Контент</RouterLink>
+    <RouterLink to="/about">О нас</RouterLink>
   </nav>
 </template>
 <style scoped>

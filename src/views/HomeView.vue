@@ -1,7 +1,7 @@
-<script setup lang="ts">
-import HomePage from '@/components/screen/homepage/HomePage.vue'
-</script>
+<script setup lang="ts"></script>
 
 <template>
-  <HomePage />
+  <div>
+    <div class="move">Тут будет контент!</div>
+  </div>
 </template>

@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { useUrls } from '../stores/urls'
-import { storeToRefs } from 'pinia'
+import { useUrls } from "../stores/urls"
+import { storeToRefs } from "pinia"
 const store = useUrls()
 const { urls } = storeToRefs(store)
 const content = urls.value
